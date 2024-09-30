@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "imfast",
+  "version": "${version}",
+  "name": "Im-Fast",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/imfast/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+    ]
+  },
+  "mixins": [
+    "imfast.mixins.json",
+    {
+      "config": "imfast.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
