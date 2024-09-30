@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.biel.mod.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "imfast.refmap.json",
+  "mixins": [
+    "VelocityMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
