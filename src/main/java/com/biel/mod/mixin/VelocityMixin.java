@@ -27,4 +27,16 @@ public class VelocityMixin {
     private double imfast_VehicleMaxSpeed(double speed) {
         return Double.MAX_VALUE;
     }
+
+    // Moved Wrongly
+    @ModifyConstant(method = "handleMovePlayer", constant = @Constant(doubleValue = 0.0625))
+    private double imfast_MovedWrong(double speed) {
+        return Double.MAX_VALUE;
+    }
+
+    // Moved Wrongly
+    @ModifyConstant(method = "handleMoveVehicle", constant = @Constant(doubleValue = 0.0625))
+    private double imfast_VehicleMovedWrong(double speed) {
+        return Double.MAX_VALUE;
+    }
 }
