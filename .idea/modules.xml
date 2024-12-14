@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Im-Fast.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Im-Fast.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.biel.mod.imfast.Im-Fast.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.biel.mod.imfast.Im-Fast.main.iml" />
     </modules>
   </component>
 </project>
