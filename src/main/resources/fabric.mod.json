@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "imfast",
+  "version": "${version}",
+  "name": "I'm Fast",
+  "description": "A modern solution using mixin to remove minecraft speed limit",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/imfast/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "com.biel.mod.imfast"
+    ]
+  },
+  "mixins": [
+    "imfast.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
