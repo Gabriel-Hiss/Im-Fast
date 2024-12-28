@@ -18,7 +18,7 @@ license = "${mod_license}"
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 # The modid of the mod
-modId = "${mod_id}" #mandatory
+modId = "imfast" #mandatory
 # The version number of the mod
 version = "${mod_version}" #mandatory
 # A display name for the mod
