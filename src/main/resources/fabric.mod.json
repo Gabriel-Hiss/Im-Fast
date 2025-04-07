@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "imfast",
+  "version": "${version}",
+  "name": "I'm Fast",
+  "description": "RandomPatches, a bunch of miscellaneous patches for Minecraft.",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/imfast/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "com.bielhiss.mod.imfast"
+    ]
+  },
+  "mixins": [
+    "imfast.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
