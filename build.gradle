@@ -10,6 +10,8 @@ base {
     archivesName = project.archives_base_name
 }
 
+
+
 loom {
     splitEnvironmentSourceSets()
 
@@ -19,7 +21,12 @@ loom {
             sourceSet sourceSets.client
         }
     }
+    mixin {
+        defaultRefmapName = "mixins.imfast.refmap.json"
+    }
 }
+
+
 
 fabricApi {
     configureDataGeneration {
