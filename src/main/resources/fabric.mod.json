@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "imfast-fabric-1_21_8",
+  "version": "${version}",
+  "name": "imfast-FABRIC-1.21.8",
+  "description": "A modern solution using mixin to remove minecraft speed limit",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/imfast-fabric-1_21_8/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "fabric-datagen": [
+    ],
+    "main": [
+      "com.biel.mod.imfast"
+    ]
+  },
+  "mixins": [
+    "imfast-fabric-1_21_8.mixins.json",
+    {
+      "config": "imfast-fabric-1_21_8.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
