@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.Constant;
 import org.spongepowered.asm.mixin.injection.ModifyConstant;
 
 
-@Mixin(ServerGamePacketListenerImpl.class)
+@Mixin(value = ServerGamePacketListenerImpl.class, priority = 2000)
 public class VelocityMixin {
     // Moved Quickly
     @ModifyConstant(method = "handleMovePlayer", constant = @Constant(floatValue = 100.0F))
