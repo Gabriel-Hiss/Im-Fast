@@ -57,6 +57,7 @@ java {
 
 jar {
     inputs.property "projectName", project.name
+    archiveBaseName = archives_base_name
 
     from("LICENSE") {
         rename { "${it}_${project.name}"}
