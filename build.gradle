@@ -12,7 +12,7 @@ repositories {
 }
 
 base {
-    archivesName = mod_id
+    archivesName = file_name
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
