@@ -18,12 +18,11 @@ loom {
     splitEnvironmentSourceSets()
 
     mods {
-        "template-mod" {
+        "imfast" {
             sourceSet sourceSets.main
             sourceSet sourceSets.client
         }
     }
-
 }
 
 dependencies {

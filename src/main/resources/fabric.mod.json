@@ -1,13 +1,14 @@
 {
   "schemaVersion": 1,
   "id": "imfast",
-  "version": "1.0.3",
-  "name": "imfast",
+  "version": "${version}",
+  "name": "I'm Fast",
   "description": "A modern solution using mixin to remove minecraft speed limit",
-  "authors": [],
+  "authors": [
+    "Bielhiss"
+  ],
   "contact": {},
-  "license": "LGPL-3.0",
-  "icon": "assets/imfast/icon.png",
+  "license": "MIT",
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -18,7 +19,8 @@
     "imfast.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.19.2",
-    "minecraft": "26.2"
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25"
   }
 }
