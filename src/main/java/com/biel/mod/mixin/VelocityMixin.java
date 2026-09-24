@@ -11,13 +11,13 @@ import org.spongepowered.asm.mixin.injection.ModifyConstant;
 @Mixin(value = ServerGamePacketListenerImpl.class, priority = 2000)
 public class VelocityMixin {
     // Moved Quickly
-    @ModifyConstant(method = "handleMovePlayer", constant = @Constant(floatValue = 100.0F))
+    @ModifyConstant(method = "handlePlayerPositionChange", constant = @Constant(floatValue = 100.0F))
     private float imfast_PlayerMaxSpeed(float speed) {
         return Float.MAX_VALUE;
     }
 
     // Moved Quickly
-    @ModifyConstant(method = "handleMovePlayer", constant = @Constant(floatValue = 300.0F))
+    @ModifyConstant(method = "handlePlayerPositionChange", constant = @Constant(floatValue = 300.0F))
     private float imfast_ElytraMaxSpeed(float speed) {
         return Float.MAX_VALUE;
     }
@@ -29,13 +29,13 @@ public class VelocityMixin {
     }
 
     // Moved Wrongly
-    @ModifyConstant(method = "handleMovePlayer", constant = @Constant(doubleValue = 0.0625))
+    @ModifyConstant(method = "handlePlayerPositionChange", constant = @Constant(doubleValue = 0.0625))
     private double imfast_MovedWrong(double speed) {
         return Double.MAX_VALUE;
     }
 
     // Moved Wrongly
-    @ModifyConstant(method = "handleMoveVehicle", constant = @Constant(doubleValue = 0.0625, ordinal = 1))
+    @ModifyConstant(method = "handleMoveVehicle", constant = @Constant(doubleValue = 0.0625))
     private double imfast_VehicleMovedWrong(double speed) {
         return Double.MAX_VALUE;
     }
