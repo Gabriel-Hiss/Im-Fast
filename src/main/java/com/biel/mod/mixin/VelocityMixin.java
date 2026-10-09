@@ -35,7 +35,7 @@ public class VelocityMixin {
     }
 
     // Moved Wrongly
-    @ModifyConstant(method = "handleMoveVehicle", constant = @Constant(doubleValue = 0.0625))
+    @ModifyConstant(method = "handleMoveVehicle", constant = @Constant(doubleValue = 0.0625, ordinal = 1))
     private double imfast_VehicleMovedWrong(double speed) {
         return Double.MAX_VALUE;
     }
